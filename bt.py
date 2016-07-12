@@ -111,10 +111,10 @@ def save_name(url):
 
 URL = 'http://www.bttiantang.com'
 o = get_url(URL)
-s = "豆瓣评分：".decode("utf-8").encode("GBK")
-dot = u'\u2027'
+#s = "豆瓣评分：".decode("utf-8").encode("GBK")
+#dot = u'\u2027'
 page = int(0)
-for i in range(378,720):
+for i in range(o.__len__()):
 	page = page + 1
 	print page
 	single_page_url = o[i]
